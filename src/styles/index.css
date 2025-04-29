@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  overflow-y: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  overflow: hidden;
+}
+.md-rendered {
+  font-family: "Roboto Slab", serif;
+}
+.md-rendered > * {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.md-rendered > div > * {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.md-rendered > div > *:first-child {
+  margin-top: 0px;
+}
+
+.md-rendered h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #35393f;
+}
+
+.md-rendered h2 {
+  font-size: 28px;
+  font-weight: 300;
+  color: #35393f;
+}
+.md-rendered h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #35393f;
+}
+.md-rendered h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #35393f;
+}
+.md-rendered h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #35393f;
+}
+.dark .md-rendered h1,
+.dark .md-rendered h2,
+.dark .md-rendered h3,
+.dark .md-rendered h4,
+.dark .md-rendered h5 {
+  color: #ffffff;
+}
+.md-rendered h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #e46643;
+}
+.md-rendered p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #7c8187;
+}
+
+.md-rendered ol {
+  font-size: 14px;
+  list-style: decimal;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 32px;
+  color: #7c8187;
+}
+.md-rendered ol li {
+  padding-left: 0.5rem;
+}
+.md-rendered ul {
+  font-size: 14px;
+  list-style: none;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 32px;
+  color: #7c8187;
+}
+.md-rendered ul li::before {
+  content: "\2022";
+  color: #e46643;
+  font-weight: 400;
+  display: inline-block;
+  width: 1.25em;
+  margin-left: -1em;
+}
+.md-rendered blockquote {
+  background-color: #f5f5f5;
+  padding: 25px 20px;
+  border-radius: 4px;
+  border-left: 4px solid #e46643;
+}
+.dark blockquote {
+  background-color: #2b2d31;
+}
+.md-rendered blockquote p {
+  color: #35393f;
+  font-weight: 700;
+}
+.dark .md-rendered blockquote p {
+  color: #ffffff;
+}
+.dark .md-rendered p,
+.dark .md-rendered ol,
+.dark .md-rendered ul {
+  color: #c1c4cb;
+}
+.md-rendered a {
+  text-decoration: underline;
+}
+.md-rendered code {
+  color: #35393f;
+  font-size: 14px;
+  line-height: 24px;
+}
+.dark .md-rendered code {
+  color: #ffffff;
+}
+.md-rendered pre {
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-radius: 4px;
+}
+.dark .md-rendered pre {
+  background-color: #2b2d31;
+}
